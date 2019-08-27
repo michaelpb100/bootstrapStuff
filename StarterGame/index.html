@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Game Page</title>
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="css/bootstrap.css">
 
 	<!-- Game CSS -->
 	<link rel="stylesheet" type="text/css" href="css/game.css">
 
 </head>
+
 <body>
+
+	<!-- header -->
+	<div class="d-flex flex-row justify-content-around topBar sticky-top">
+		<div class="py-2">
+			<p class="scoreLabel">Score: 0</p>
+		</div>
+		<div class="py-2">
+			<img src="images/SmallLogo.png" class="smallLogo img-fluid" />
+		</div>
+		<div class="py-2">
+			<img src="images/leaderboard.png" class="leaderboard" />
+		</div>
+	</div>
 
 	<!-- Main Container -->
 	<div class="d-flex flex-row">
-		
+
 	</div>
 
 	<!-- Game Board -->
 	<div class="container py-md-3 py-sm-1">
-		
-		<!-- Game Board -->
-		
-		
+
+
+
+	</div>
+
+	<!-- copyright -->
+	<div class="d-flex flex-column align-items-center fixed-bottom">
+		<img src="images/carved-rock-logo-white.png" class="img-fluid"/>
+		<p class="copyRight">Copyright Carved Rock &copy: 2019</p>
+
 	</div>
 
 	<!-- Question Modal -->
@@ -36,7 +58,7 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					
+
 				</div>
 			</div>
 		</div>
@@ -119,4 +141,5 @@
 	<script src="js/game.js"></script>
 
 </body>
+
 </html>
