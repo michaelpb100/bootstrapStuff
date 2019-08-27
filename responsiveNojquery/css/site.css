@@ -116,14 +116,18 @@
     }
 
     .link:nth-child(1) {
-        transition: all 0.5s ease 0.2s;
+        transition: opacity 0.5s ease 0.2s;
     }
 
     .link:nth-child(2) {
-        transition: all 0.5s ease 0.4s;
+        transition: opacity 0.5s ease 0.4s;
     }
     .link:nth-child(3) {
-        transition: all 2s ease 0.8s;
+        /* transition: all 2s ease 0.8s; */
+        transition-property: opacity;
+        transition-delay: 1s;
+        transition-duration: 0.8s;
+        transition-timing-function: cubic-bezier();
     }
 
     li.fade {
