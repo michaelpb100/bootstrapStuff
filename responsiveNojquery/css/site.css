@@ -126,7 +126,7 @@
         transition-timing-function: cubic-bezier();
     }
 
-    li.fade {
+    .link.fade {
         opacity: 1;
     }
 }
