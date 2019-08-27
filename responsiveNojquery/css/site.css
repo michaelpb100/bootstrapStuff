@@ -111,10 +111,6 @@
         opacity: 0;
     }
 
-    .link.open {
-        opacity: 1;
-    }
-
     .link:nth-child(1) {
         transition: opacity 0.5s ease 0.2s;
     }
