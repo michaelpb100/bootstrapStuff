@@ -1,4 +1,6 @@
 
+
+
 .box{
     position: relative;
     /* top: 20px; */
@@ -24,4 +26,6 @@
 
 .item2{
     background: rebeccapurple;
+    position: fixed;
+    bottom:0px
 }
