@@ -29,13 +29,21 @@
 
 }
 
+.anchorstyle{
+    text-decoration: none;
+}
+
+.anchorstyle:hover{
+    color: blanchedalmond;
+    cursor: pointer;    
+}
+
 .link{
     margin-right: 10px;
 }
 
 .link:hover { 
-    color: blanchedalmond;
-    cursor: pointer;
+
 }
 
 .mainSection {
