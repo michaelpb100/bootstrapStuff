@@ -16,7 +16,26 @@
 .navMenu {
     background: var(--blueBackground);
     height: var(--navHeight);
+}
+
+.nav-links{
+    margin-left: auto;
     display: flex;
+    list-style-type: none;
+    width: 50%; 
+    height: 100%; 
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.link{
+    margin-right: 10px;
+}
+
+.link:hover { 
+    color: blanchedalmond;
+    cursor: pointer;
 }
 
 .mainSection {
@@ -41,24 +60,7 @@
     background: var(--blueBackground);
     height: var(--footerHeight);
 }
-.nav-links{
-    margin-left: auto;
-    display: flex;
-    list-style-type: none;
-    width: 50%; 
-    height: 100%; 
-    align-items: center;
-    justify-content: space-around;
-}
 
-.link{
-    margin-right: 10px;
-}
-
-.link:hover { 
-    color: blanchedalmond;
-    cursor: pointer;
-}
 
 
 
