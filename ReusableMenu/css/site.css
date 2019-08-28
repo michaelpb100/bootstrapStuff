@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+:root {
+    --navHeight: 30px;
+    --footerHeight: 20px;
+    --blueBackground: #5b78c7;
+  }
+  
+
+.navMenu {
+    background: var(--blueBackground);
+    height: var(--navHeight);
+}
+
+.nav-links{
+    margin-left: auto;
+    display: flex;
+    list-style-type: none;
+    width: 50%; 
+    height: 100%; 
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.link{
+    margin-right: 10px;
+}
+
+.link:hover { 
+    color: blanchedalmond;
+    cursor: pointer;
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    height:  calc(100vh - var(--footerHeight) - var(--navHeight));
+}
+
+.mainImage {
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.mainText {
+    font-size: 27px;
+    color: blue;
+    font-weight: bold;
+}
+
+.footer{
+    background: var(--blueBackground);
+    height: var(--footerHeight);
+}
+
+
+
+
+.hamburger{
+    z-index: 2;
+}
+
+/* .line{
+    border-top: 2px solid white;
+} */
+
+@media screen and (max-width: 768px){
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    .nav-links{
+        position: fixed;
+        background: var(--blueBackground);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    } 
+
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    nav { 
+        position: relative;
+    }
+
+    .hamburger{
+        position: absolute;
+        right: 5%;
+        cursor: pointer;
+    }
+
+    .link {
+        opacity: 0;
+    }
+
+    .link:nth-child(1) {
+        transition: opacity 0.5s ease 0.2s;
+    }
+
+    .link:nth-child(2) {
+        transition: opacity 0.5s ease 0.4s;
+    }
+    .link:nth-child(3) {
+        /* transition: all 2s ease 0.8s; */
+        transition-property: opacity;
+        transition-delay: 1s;
+        transition-duration: 0.8s;
+        transition-timing-function: cubic-bezier();
+    }
+
+    .link.fade {
+        opacity: 1;
+    }
+}
+
