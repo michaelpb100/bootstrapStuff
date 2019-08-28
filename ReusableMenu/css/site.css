@@ -41,11 +41,6 @@
 .link{
     margin-right: 10px;
 }
-
-.link:hover { 
-
-}
-
 .mainSection {
     display: flex;
     flex-direction: column;
