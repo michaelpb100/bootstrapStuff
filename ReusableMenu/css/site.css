@@ -14,6 +14,8 @@
   
 
 .navMenu {
+    position: fixed;
+    width: 100%;
     background: var(--blueBackground);
     height: var(--navHeight);
 }
@@ -44,8 +46,11 @@
 .mainSection {
     display: flex;
     flex-direction: column;
+    padding-top: var(--navHeight);
     -ms-flex-direction: column;
-    height:  calc(100vh - var(--footerHeight) - var(--navHeight));
+    /* min-height: 100%; */
+    /* height:  calc(100vh - var(--footerHeight) - var(--navHeight)); */
+    min-height:  calc(100vh - var(--footerHeight));
 }
 
 .mainImage {
@@ -60,12 +65,12 @@
 }
 
 .footer{
+    /* position: fixed;
+    bottom: 20px; */
     background: var(--blueBackground);
     height: var(--footerHeight);
+    z-index: 2;
 }
-
-
-
 
 .hamburger{
     z-index: 2;
